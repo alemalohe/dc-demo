@@ -1,4 +1,4 @@
-<img src="https://dc.octos.me/logo.png" width="50" height="50" /> 
+### <img src="https://dc.octos.me/logo.png" width="50" height="50" /> 
 # Demo site for [Dynamic Cards](https://dc.octos.me) 
 ### Add Dynamic Cards to your static website
 ## [View Demo](https://alemalohe.github.io/dc-demo/)
