@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julie</title>
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- embedded CSS file -->
+    <link rel="stylesheet" href="https://api.dc.octos.me/cdn/dc_style.css">
+</head>
+<body>
+    <!-- custom hero -->
+    <div class="hero">
+        <img src="https://cdn.dribbble.com/users/222180/avatars/normal/b2b46417bd533866f499e25bd1987151.jpg" width="100px" alt="">
+        <h4>Jessica Strelioff</h4>
+        <h3>Independent brand designer & creative director</h3>
+    </div>
+
+    <div class="container">
+        <!-- add this to where you want your cards to appear -->
+        <div id="DCards">
+            <div class="DC_main_header">
+                <h1 class="DC_main_heading" id="DC_main_heading"></h1>
+                <p class="DC_main_desc" id="DC_main_desc"></p>
+            </div>
+            <div id="DCards_list">
+                <!-- your cards list here -->
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Javascript Code -->
+    <script>
+        var headers=new Headers;headers.append("key","value");var options={method:"GET",headers:headers,mode:"cors",cache:"default"};function init(){fetch("https://api.dc.octos.me/api/user/site/?token=eyJkYXRhIjoic2l0ZV9pZCIsImlhdCI6MTYxMTE3NjUyNH0",options).then(e=>e.json()).then(e=>{document.querySelector("#DC_main_heading").innerHTML=e.site.title,document.querySelector("#DC_main_desc").innerHTML=e.site.description,console.log(e.cards),e.cards.forEach(e=>{document.querySelector("#DCards_list").innerHTML+=e.code})}).catch(e=>console.log("Error !",e))}window.onload=(()=>init());
+    </script>
+</body>
+</html>

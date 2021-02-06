@@ -1,0 +1,68 @@
+html{
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: rgb(2, 69, 255);
+  border-radius: 50px;
+}
+
+html::-webkit-scrollbar-track{
+  background: rgb(244, 244, 247);
+}
+
+.hero {
+  padding: 100px;
+  text-align: center;
+}
+
+.hero img {
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.hero h3 {
+  max-width: 900px;
+  font-size: 45px;
+  line-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero h4 {
+  font-size: 25px;
+  color:rgb(2, 69, 255);
+}
+
+@media (max-width: 600px){
+  .hero {
+    padding: 40px;
+    text-align: left;
+  }
+
+  .hero img {
+    border-radius: 50px;
+  }
+
+  .hero h3 {
+    font-size: 29px;
+    line-height: 35px;
+    font-weight: 800;
+  }
+
+  .hero h4 {
+    font-size: 20px;
+    float: right;
+    margin-top: 35px;
+  }
+}
+
+.container{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
